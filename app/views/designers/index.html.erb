@@ -1,0 +1,17 @@
+<%= render :partial => "shared/header" %>
+
+<div class="content main_page"> 
+	<div class = "maindesigners">	
+	
+		<% @designers.each do |designer| %>
+			<%= link_to designer.name, designer %>
+			/
+		<% end %>
+		
+	</div>
+	
+	
+</div>
+
+
+

@@ -1,0 +1,98 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree . 
+*/
+
+a:hover img{
+	underline: none;
+	background-color:  transparent;
+	color:  transparent;
+}
+
+/* header */
+
+header {
+	position:  fixed;
+	top: 15px;
+	width:  100%;
+	height: 60px;
+	background-color:  #808080;
+	z-index: 10;
+	
+}
+
+header img {
+	width: 80px;
+	margin: auto;
+	display:  block;
+}
+
+nav ul {
+	font-family: Ariel;
+	font-weight: 110;
+	font-size: 120%;
+	text-align: center;
+	margin: 0 auto 10px auto;
+	position:  relative;
+	top: -40px;
+	
+}
+
+nav li {
+	display: inline;
+	margin: 20px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+nav a {
+	color:  black;
+	
+	-moz-transition:  all .2s ease-in;
+	-webkit-transition:  all .2s ease-in;
+	transition: all .2s ease-in;
+}
+
+nav a:hover {
+	background-color:  transparent;
+}
+
+#designers, #dresses {
+	position:  relative;
+	left: -50px;
+}
+
+#find {
+	width:  700px;
+	height:  80px;
+	margin:  auto;
+	background-color:  #808080;
+	position: relative;
+	top: -30px;
+	/*visibility:  hidden;*/
+	display: none;
+}
+
+#title {
+	position:  relative;
+	top:  100px;
+	z-index:  5;
+	width: 100%;
+	text-align:  center;
+	font-family: "Helvetica Neue",sans-serif;
+	font-weight: 200;
+	margin-bottom:  30px;
+}
+
+/* general stuff */
+.pagination {
+	clear:  both;
+	float:  right;
+	position:  relative;
+	top:  100px;
+	left:  -100px;
+	font-family:  Ariel;
+}

@@ -1,0 +1,21 @@
+<%= render :partial => "shared/header" %>
+
+<div class="content">
+	<div class="main">
+	
+		<div class="dresspage">
+			
+			<%= image_tag @dress.image_url %>
+			
+			<section class="show_info">
+				<div id="dress_designer"><%=@dress.designer.name%></div>
+				<div id="dress_name"><%= link_to @dress.name, @dress.url,:target => "_blank" %></div>
+				<div id="old_price"><%= number_to_currency(@dress.retail_price) %></div>
+				<div id="best_price"><%= number_to_currency(get_lowest_price(@dress)) %></div>
+				<div id="description"><%= @dress.description %></div>
+			</section>
+		</div>
+			
+	</div>
+</div>
+

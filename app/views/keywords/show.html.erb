@@ -1,0 +1,4 @@
+<h1><%= @keyword.name %></h1>
+<% @dresses.each do |dress| %>
+	<p><%= link_to dress.name, dress_path(dress.id) %>
+<% end %>

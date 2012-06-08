@@ -1,0 +1,36 @@
+<%= render :partial => "shared/header" %>
+
+<div class="content main_page"> 
+	<div class = "main">	
+	
+		
+			
+		<ul class="dress_list">
+		
+			<% @dresses.each do |dress| %>
+			<li class= "individual">
+				<div class="dress"> 
+					<div class="dress-card">
+						<div class="dress-image">
+							<%= link_to image_tag(dress.image_url), dress_path(dress.id) %>
+						</div>
+				
+						<ul class="dress-info">
+							<li class="designer"><%= truncate(dress.designer.name, :length => 20) %></li>
+							<li class="old-price"><%= number_to_currency(dress.retail_price) %></li>
+							<li class="best-price"><%= number_to_currency(get_lowest_price(dress)) %></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<% end %>
+		</ul>
+		
+	</div>
+	
+	<div>
+		<%= paginate @dresses %>
+	</div>
+	
+</div>
+

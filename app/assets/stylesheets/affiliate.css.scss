@@ -1,0 +1,35 @@
+* {
+	border: 0 none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	outline: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+
+.mainaffiliates{
+	position: relative;
+	top: 100px;
+	width: 900px;
+	margin: auto;
+	text-align: justify;
+}
+
+.affiliate_list {
+	list-style: none;
+	width: 100px;
+	position: relative;
+	margin: auto;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.affiliate_list a:hover{
+	text-decoration: underline;
+	background: transparent;
+	color: black;
+}

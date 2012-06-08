@@ -1,0 +1,18 @@
+<header>
+	<%= link_to image_tag("logo2.png", :id=>"logo"), dresses_path %>
+	<nav>
+		<ul>
+			<li id="dresses"><%= link_to "Dresses", dresses_path %></li>
+			<li id="designers"><%= link_to "Designers", designers_path %></li>
+			<li id="retailers"><%= link_to "Retailers", affiliates_path %></li>
+			<li id="about"><%= link_to "About", about_path %></li>
+		</ul>
+		<div id="find">
+		</div>
+	</nav>
+	
+</header>
+
+<% unless @title.nil? %>
+	<h1 id="title"><%= @title %></h1>
+<% end %>

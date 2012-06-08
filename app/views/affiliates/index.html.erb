@@ -1,0 +1,15 @@
+<%= render :partial => "shared/header" %>
+
+<div class="content main_page"> 
+	<div class = "mainaffiliates">	
+		<ul class="affiliate_list">
+		<% @affiliates.each do |affiliate| %>
+			<li><%= link_to affiliate.name, affiliate %></li>
+		<% end %>
+		</ul>
+		
+	</div>
+	
+	
+</div>
+
