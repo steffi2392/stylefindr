@@ -9,6 +9,9 @@ gem 'rails', '3.1.1'
 #gem 'sqlite3'
 gem 'pg'
 
+#ADDED FOR HEROKU
+gem 'thin'
+
 gem 'spreadsheet'
 
 
